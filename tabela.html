@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Cadastro</title>
+</head>
+
+<body id="bodier">
+    <header>
+        <div id="title">
+            <h1>Tabela de Cadastro</h1>
+        </div>
+
+        <table id="tabela">
+
+            <tr>
+                <th>Chave</th>
+                <th>Nome</th>
+                <th>E-mail</td>
+                <th>Cidade</th>
+                <th>Endereço</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+
+        </table>
+        <button type="button" onclick="redirecionarParaPagina()">
+            <h4>Voltar</h4>
+        </button>
+</body>
+<script>
+
+    // Salvando os dados de cadastros de usuário na tabela.html
+
+    const dados = JSON.parse(localStorage.getItem('dados')) || [];
+    var tabela = document.getElementById("tabela");
+
+    function mostrarDados() {
+        dados.forEach((item, chave) => {
+            tabela.innerHTML += `    
+        <tr>
+        <td>${chave}</td>
+        <td>${item.nome}</td>
+        <td>${item.email}</td>
+        <td>${item.cidade}</td>
+        <td>${item.endereco}</td>
+        <td>${item.tel}</td>
+        <td>
+        <a href="pedido.html?chave=${chave}">Editar</a>
+        <a href="#" onclick="remover(${chave})">Remover</a>
+        <td>
+    </tr>
+    `;
+        });
+    }
+
+    function remover(chave) {
+        dados.splice(chave, 1);
+        localStorage.setItem("dados", JSON.stringify(dados));
+        location.reload();
+    }
+
+    function redirecionarParaPagina() {
+        window.location.href = "./pedido.html";
+    }
+
+    ///Formatação da tabela.html por Java
+
+    var table = document.getElementById("tabela");
+    var cells = tabela.getElementsByTagName("th");
+
+    table.style.textAlign = "center";
+
+    mostrarDados();
+
+    function formatarTabela() {
+        const parafrafos = document.querySelectorAll("td");
+        parafrafos.forEach(par => {
+            par.style.border = "1px solid black";
+        });
+
+        for (var i = 0; i < 7; i++) {
+            cells[i].style.border = "1px solid black";
+        }
+    }
+
+    formatarTabela();
+
+    // tentativa de remover duplicadas da tabela
+
+
+</script>
+
+</html>

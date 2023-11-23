@@ -1,0 +1,193 @@
+html {
+    font-family: Arial;
+    font-size: 62.5%;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to top, #222222, black);
+    color: #8a2be2;
+    text-align: center;
+    align-items: center;
+    position: auto;
+    /* Mudar para Fixed */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    padding: 0;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+footer {
+    background: linear-gradient(to bottom, #222222, black);
+    border-radius: 20px;
+    color: #8a2be2;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 20px;
+    color: #8a2be2;
+}
+
+h2 {
+    font-size: 3.0rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px;
+    text-align: center;
+}
+
+#inscreva-se-btn {
+    border: 1px solid #8a2be2;
+    border-radius: 8px;
+    background-color: #222222;
+    color: white;
+    height: 80px;
+    width: 450px;
+}
+
+#inscreva-se-btn:hover {
+    border: 1.75px solid #8a2be2;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 450px;
+    box-shadow: 2px 1px 1px #8a2be2;
+
+}
+
+.div-btn {
+    text-align: center;
+}
+
+label,
+input {
+    display: inline-block;
+
+}
+
+input {
+    margin: 5px;
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 3px 0.3px #000000;
+}
+
+.azul,
+.laranja {
+    background-color: #222222;
+    border: solid 1px #8a2be2;
+    border-radius: 5px;
+}
+
+label {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 10px;
+
+    background-color: #222222;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: solid 1px #8a2be2;
+    border-radius: 5px;
+}
+
+.botoes button:hover {
+    border: 1.75px solid #8a2be2;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px #8a2be2;
+}
+
+section {
+    margin: 0px;
+    border-radius: 8px;
+    border: solid 1px white;
+    border-radius: 20px;
+    box-shadow: 20px 10px 12px #000000;
+
+}
+
+form {
+    font-size: 2rem;
+}
+
+.pedido-sub-titulos {
+    text-align: center;
+}
+
+hr {
+    margin-top: 20px;
+    width: 45%;
+}
+
+.mini-hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 12%;
+    border-style: dashed;
+}
+
+.hr-mini {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 25%;
+    border-style: inherit;
+}
+
+.hr-header {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.v1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ola {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.ola a {
+    color: white;
+}

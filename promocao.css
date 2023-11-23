@@ -1,0 +1,182 @@
+html {
+    font-family: Arial;
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #222222, black);
+    padding-bottom: 30px;
+    border-radius: 35px;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0rem;
+    font-size: 2rem;
+    border: solid 1px white;
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: 20px 10px 12px #000000;
+
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+li:hover {
+    padding: 3px;
+    background-color: black;
+    color: white;
+    box-shadow: 6px 1px 1px 20% #8a2be2;
+}
+
+a {
+    color: white;
+}
+
+
+
+footer {
+    background: linear-gradient(to bottom, #222222, black);
+    color: #8a2be2;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.imagens-site {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1.5px 1px 1px black;
+    border: solid 4px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Sempre Alinha no Centro */
+}
+
+.grid div {
+    background-color: 222222ff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Sempre Alinha no Centro */
+}
+
+.grid2 div {
+    background-color: #222222;
+    text-align: center;
+    padding: 2rem;
+}
+
+#compras {
+    background-color: black;
+    color: white;
+    width: 275px;
+    height: 150px;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 8.5rem;
+    z-index: 1;
+    border-radius: 12px;
+    border: solid 1px #8a2be2;
+    box-shadow: 1.5px 1px 1px #8a2be2;
+}
+
+#compras button {
+    background-color: #222222;
+    border: solid 1px #8a2be2;
+    border-radius: 12px;
+    width: 225px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    height: 80px;
+
+}
+
+#compras button:hover {
+    border: 1.75px solid #8a2be2;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 1.5px 1px 1px #8a2be2;
+
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 20px;
+    color: #8a2be2;
+
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#inscreva-se-btn2 {
+    border: 2px solid #8a2be2;
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 12px;
+
+}
+
+#inscreva-se-btn2:hover {
+    border: 1.75px solid #8a2be2;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    box-shadow: 1.5px 1px 1px #8a2be2;
+}
+
+hr {
+    margin-top: 20px;
+    width: 45%;
+    border: solid 0.1px white;
+}
